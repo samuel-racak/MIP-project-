@@ -1,6 +1,7 @@
 % Metódy inžinierskej práce
+% made by: Samuel Racak
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -14,111 +15,93 @@
 %\usepackage{times}
 
 \pagestyle{headings}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\title{Vplyv hier a gamifikácie na výučbu jazykov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/2023, vedenie: Ing. Igor Stupavský}}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
-
-\author{Meno Priezvisko\\[2pt]
+\author{Samuel Račák\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xracaks@stuba.sk}}
 	}
-
-\date{\small 30. september 2015} % upravte
-
-
-
+\date{\small 20. november 2022} % upravte
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{document}
 
 \maketitle
 
-\begin{abstract}
-\ldots
-\end{abstract}
+%\begin{abstract}
+%\ldots
+%\end{abstract}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Úvod} \label{Abstract}
+
+Moderné technológie už niekoľko dekád ovplyvňujú mnohé aspekty života spoločnosti. V poslednom období sa značne zvýšil záujem o gamifikáciu a využívanie hier vo výučbe. Tento trend nastal vďaka stále sa zväčšujúcemu počtu hráčov hier na všetkých možných platformách, či už ide o smartfóny, stolné počítače, alebo virtuálnu realitu. Na základe masívneho úspechu počítačových hier, sa stalo cieľom mnohých vyučujúcich túto situáciu využiť, a prísť s novým prístupom využívajúcim herné prvky vo výučbe. 
+Jednou z najviac gamifikovaných oblastí je výučba jazykov. Cieľom tohto článku bude analyzovať výsledky po aplikovaní gamifikácie na výučbu jazyka \ref{languagegemificationresult} a nový trend výučby jazykov v podobe mobile learningu \ref{mobilelearning}.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Vysvetlenia a definície pojmov} \label{definitions}
+
+\subsection{Gamifikácia} \label{gamification}
+
+Gamifikácia označuje aplikáciu herných prvkov v prístupe k vykonávaniu akejkoľvek pôvodne nehernej činnosti. Typicky sa používa na zvýšenie motivácie používateľov, na zotrvanie, alebo ovplyvnenie správania používateľa. Na podporu takéhoto správania používa množstvo prostriedkov. Medzi najviac využívané patrí napríklad získavanie digitálneho skóre, porovnávanie s ostatnými používateľmi, alebo túžba používatela vyhrať. Účelom gamifikácie v kontexte výučby je podpora motivácie do vzdelávania a zjednodušenie výučbového procesu. 
 
 
+\subsection{Mobilné učenie} \label{mobilelearning}
 
-\section{Úvod}
+Označuje nový prístup k učeniu využívajúci mobilné technológie qoute z knihy preložený do slovenciny "teoreticky je možné mobilné učenie definovať ako akúkoľvek formu učenia sa pomocou zariadenia na batérie, takého že dokáže sprevádzať človeka kedykoľvek a kamkoľvek".~\cite{deMoraesSarmentoRego2015}
+Mobilné učenie je považované skôr za doplnok k tradičnému štýlu učenia, než jeho úplným nahradením. Medzi hlavné výhody patrí možnosť pokračovať v učení aj mimo školy, učivo prispôsobené študentovi na mieru, ale aj väčšia sloboda študentov pri práci s látkou, či možnosť spolupráce medzi študentami podľa článku~\cite{deMoraesSarmentoRego2015}.
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+\section{Prostriedky gamifikácie}
 
+\subsection{Súťaživosť} \label{competitiveness}
+Súťaživosť je dôležitou súčasťou video hier a preto má svoje miesto aj ako proces gamifikácie aktivít a činností.
+\begin{description}
+\item [definícia]
+Súťaživý ľudia sú motivovaný prekonávať svoje limity ak za vyvinutie takejto námahy získajú nejaký benefit. Hry a gamifikácia využívajú psychológiu vo svoj prospech tým, že používajú prirodzenú túžbu človeka na sebauspokojenie. Takáto súťaživosť je jedným z hlavných faktorov, ktoré robia gamifikáciu veľmi efektívnou.
 
+\item [aký vplyv mala na učenie] FILLTEXT
+\end{description}
 
-\section{Nejaká časť} \label{nejaka}
+\subsection{Motivácia} \label{motivation}
+\begin{description}
+\item [definícia] Motivácia je zásadný faktor ovplyvňujúci kvalitu učenia aj chuť študenta pokračovať vo výučbe !Tabulka 1, 4! . Je tak zásadná, že je to jeden z hlavných faktorov, pre ktoré sa na e-learningových platformách rozhodne študent skončiť s učením. Pri experimente v článku \cite{arce_valdivia_2020} sa pokúsili pomocou gamifikácie zvýšiť internú aj externú motiváciu. Internú motiváciu posilňovali pomocou skóre či levelov. Naopak na externú motiváciu je potrebné dostať uznanie od komunity čo sa dá dosiahnuť napríklad zavedením globálnej tabuľky zoradenej podľa skóre, či súperením s ostatnými používateľmi.
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
+\item [aký vplyv mala na učenie] FILLTEXT
+\end{description}
 
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+\section{Výsledok po aplikovaní gamifikácie na učenie angličtiny} \label{languagegemificationresult}
 
+FILLTEXT
 
-\section{Iná časť} \label{ina}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+\section{Ako funguje mobilné učenie a gamifikácia (DUOLINGO)} \label{duolingo} % 
 
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+FILLTEXT
 
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+\section {Štatistiky, grafy levelmi .... (Motivácie)} \label{statistics}
 
-Niekedy treba uviesť zoznam:
+FILLTEXT
 
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Ten istý zoznam, len číslovaný:
+\section{Záver} \label{end}
 
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+FILLTEXT
 
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \end{document}
