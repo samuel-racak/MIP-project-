@@ -4,15 +4,19 @@
 \documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
+
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{graphicx} % na formatovanie obrazkov
+\graphicspath{ {./obrázky} } % nastavenie cesty pre obrazky
+% \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
 \usepackage{cite}
-%\usepackage{times}
+\usepackage{parskip}
+% \usepackage{times}
+% \usepackage[authoryear,sort]{natbib}
+
 
 \pagestyle{headings}
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -23,87 +27,172 @@
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{xracaks@stuba.sk}}
 	}
-\date{\small 20. november 2022} % upravte
+\date{\small 14. december 2022} % upravte
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-    velmi podobne uvodu len kratsie, uvod treba upravit
+    Kvôli stále väčšiemu prepojeniu spoločnosti a napredujúcej globalizácii sa dopyt po multilingválnych ľuďoch neustále zväčšuje.
+    Preto je dôležité analyzovať a porovnať rozličné prístupy vo výučbe cudzích jazykov.
+    Rozvoj technológii je rýchly a ak s ním chce vyučovanie držať krok, malo by využívať zavedené technologické koncepty aj pri učení.
+    Jedným z nových prístupoch v biznise, ale aj vo výučbe je aj gamifikácia.
+    Tento článok kombinuje a porovnáva výsledky rozličných štúdii s cieľom odpovedať na otázku: Má gamifikácia prípadne výučba jazyka pomocou štandardných prostriedkov zmysel?
 \end{abstract}
-%\begin{abstract}
-%\ldots
-%\end{abstract}
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\section{Úvod} \label{uvod}
+\section{Úvod} \label{Introduction}
 
-Moderné technológie už niekoľko dekád ovplyvňujú mnohé aspekty života spoločnosti. V poslednom období sa značne zvýšil záujem o gamifikáciu a využívanie hier vo výučbe. Tento trend nastal vďaka stále sa zväčšujúcemu počtu hráčov hier na všetkých možných platformách, či už ide o smartfóny, stolné počítače, alebo virtuálnu realitu. Na základe masívneho úspechu počítačových hier, sa stalo cieľom mnohých vyučujúcich túto situáciu využiť, a prísť s novým prístupom využívajúcim herné prvky vo výučbe.
-Jednou z najviac gamifikovaných oblastí je výučba jazykov. Cieľom tohto článku bude analyzovať výsledky po aplikovaní gamifikácie na výučbu jazyka \ref{languagegemificationresult} a nový trend výučby jazykov v podobe mobile learningu \ref{mobilelearning}.
-
-%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-\section{Vysvetlenia a definície pojmov} \label{definitions}
-
-\subsection{Gamifikácia} \label{gamification}
-
-Gamifikácia označuje aplikáciu herných prvkov v prístupe k vykonávaniu akejkoľvek pôvodne nehernej činnosti. Typicky sa používa na zvýšenie motivácie používateľov, na zotrvanie, alebo ovplyvnenie správania používateľa. Na podporu takéhoto správania používa množstvo prostriedkov. Medzi najviac využívané patrí napríklad získavanie digitálneho skóre, porovnávanie s ostatnými používateľmi, alebo túžba používatela vyhrať. Účelom gamifikácie v kontexte výučby je podpora motivácie do vzdelávania a zjednodušenie výučbového procesu.
-
-
-\subsection{Mobilné učenie} \label{mobilelearning}
-
-Označuje nový prístup k učeniu využívajúci mobilné technológie qoute z knihy preložený do slovenciny "teoreticky je možné mobilné učenie definovať ako akúkoľvek formu učenia sa pomocou zariadenia na batérie, takého že dokáže sprevádzať človeka kedykoľvek a kamkoľvek".~\cite{deMoraesSarmentoRego2015}
-Mobilné učenie je považované skôr za doplnok k tradičnému štýlu učenia, než jeho úplným nahradením. Medzi hlavné výhody patrí možnosť pokračovať v učení aj mimo školy, učivo prispôsobené študentovi na mieru, ale aj väčšia sloboda študentov pri práci s látkou, či možnosť spolupráce medzi študentami podľa článku~\cite{deMoraesSarmentoRego2015}.
+Vývoj ľudstva napreduje v mnohých smeroch, no snáď najväčším vývojom si prešli počítače a všetky technológie z nich vychádzajúce.
+Tieto technológie už pár dekád ovplyvňujú svet a s tým mnohé aspekty života nasej spoločnosti.
+Či už je to možnosť takmer neustálej komunikácie skoro odkiaľkoľvek na svete, alebo prístup k takmer všetkým poznatkom v priebehu pár sekúnd.
+Všetky tieto zmeny majú dopad okrem iného aj na vyučovanie, ktoré ak chce držať krok s dobou, musí vhodne implementovať nové technológie do vyučovacieho procesu.
+Vďaka stále narastajúcemu počtu hráčov hier na všetkých možných platformách \ref{gamer_count}, sa stalo cieľom mnohých učiteľov a vedeckej komunity nájsť nový prístup k predávaniu a vyučovaniu informácii.
+Takýto prístup využíva herné prvky s cieľom zvýšiť kvalitu výučby a aktivitu používateľa \ref{gamification}.
+Tento článok sa bude zaoberať využívaním gamifikácie a hier na výučbu jazykov \ref{new_language_learning}, jej výsledky \ref{conclusion} a ako je gamifikácia výučby jazykov prepojená s mobilným učením \ref{new_language_learning}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\section{Moderný prístup k učeniu jazykov} \label{new_language_learning}
 
-\section{Prostriedky gamifikácie}
-
-\subsection{Súťaživosť} \label{competitiveness}
-Súťaživosť je dôležitou súčasťou video hier a preto má svoje miesto aj ako proces gamifikácie aktivít a činností.
-\begin{description}
-    \item [definícia]
-          Súťaživý ľudia sú motivovaný prekonávať svoje limity ak za vyvinutie takejto námahy získajú nejaký benefit. Hry a gamifikácia využívajú psychológiu vo svoj prospech tým, že používajú prirodzenú túžbu človeka na sebauspokojenie. Takáto súťaživosť je jedným z hlavných faktorov, ktoré robia gamifikáciu veľmi efektívnou.
-
-    \item [aký vplyv mala na učenie] FILLTEXT
-\end{description}
-
-\subsection{Motivácia} \label{motivation}
-\begin{description}
-    \item [definícia] Motivácia je zásadný faktor ovplyvňujúci kvalitu učenia aj chuť študenta pokračovať vo výučbe !Tabulka 1, 4! . Je tak zásadná, že je to jeden z hlavných faktorov, pre ktoré sa na e-learningových platformách rozhodne študent skončiť s učením. Pri experimente v článku \cite{arce_valdivia_2020} sa pokúsili pomocou gamifikácie zvýšiť internú aj externú motiváciu. Internú motiváciu posilňovali pomocou skóre či levelov. Naopak na externú motiváciu je potrebné dostať uznanie od komunity čo sa dá dosiahnuť napríklad zavedením globálnej tabuľky zoradenej podľa skóre, či súperením s ostatnými používateľmi.
-
-    \item [aký vplyv mala na učenie] FILLTEXT
-\end{description}
+So stále narastajúcim počtom hráčov, ale aj ľudí závislých na technológiách ako je internet, hry a sociálne siete je, pre zaužívaný prístup k vyučovania, stále ťažšie zaujať a preniesť informáciu na moderných žiakov \cite{Hou_Xiong_Jiang_Song_Wang_2019}.
+Kvôli týmto skutočnostiam bola do výučbového procesu začlenená gamifikácia \ref{gamification}, ktorá má za úlohu priniesť hráčom známe prostredie a celkovo zvýšiť záujem, aktivitu a zlepšiť výsledky žiakov. Gamifikácia vo výučbe jazykov je často spojená aj s ďalším novým prístupom nazývaným mobilné učenie \ref{mobile_learning}, ktorý využíva možnosti nových technológii ako sú smartfóny, či zväčšenie dostupnosti a rýchlosti mobilného internetu.
+Mobilné učenie v kombinácii s gamifikáciou dáva možnosť žiakom študovať kdekoľvek a kedykoľvek a zároveň preukázateľne zvyšuje ich dosiahnuté študijné výsledky v oblasti výučby jazykov \cite{dehganzadeh2020investigating}.
+Napriek tomu je možné pozorovať zväčšenie počtu ukončenia štúdia predmetu ak ide o E-learning \cite{LEVY2007185}. Väčšina študentov, ktorý predčasne ukončili výučbu v danom predmete tak urobilo z dôvodu nespokojnosti s kvalitou predmetu. Z toho usudzujem, že je nesmierne dôležite, nie len sprístupniť predmetové materiály na internete, ale aj správne zakomponovať gamifikáciu do vyučovacieho procesu tak aby študent nestratil motiváciu \cite{HarveCuadr2020h0}.
+Nesprávne zakomponovanie gamifikácie do výučby, síce zvýši externú motiváciu, teda takú kde je človek motivovaný nejakým vonkajším cieľom, alebo odmenou,
+ale zároveň môže byť škodlivá na internú motiváciu človeka vypracovať zadanú úlohu v prípade, že sa bude cítiť do zadanej úlohy donútený a nebude mať vlastné vnútorné chcenie [odkaz na knihu].
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\section{Výsledok po aplikovaní gamifikácie na učenie angličtiny} \label{languagegemificationresult}
+\section{Gamifikácia} \label{gamification}
 
-FILLTEXT
+Je pomerne nový pojem, aj keď optimalizácia dizajnu používateľského prostredia je tu minimálne od doby prvých grafických užívateľských rozhraní. Z tohto dôvodu sa zatiaľ vedecká komunita nezhodla na presnej špecifikácii daného pojmu, čo ma za následok miešanie gamifikácie a rozličných pojmov ako seriózne hry, herný dizajn a hrateľnosť.
+V skratke by sme gamifikáciu mohli definovať ako používanie herných prvkov v nehernom prostredí \cite[s. 10]{deterding2011game}. Ďalej je veľmi dôležite spomenúť, že aplikácie a programy používajú gamifikáciu tak robia, nie preto, aby sa z nich stali hry, ale preto aby sa hrám priblížili a využili ich prvky na zvýšenie motivácie používateľa.
+Medzi často používane prvky gamifikácie patrí:
+\begin{enumerate}
+    \item skóre
+    \item životy
+    \item levely
+    \item odznaky
+    \item okamžitá spätná väzba
+    \item porovnávanie s ostatnými používateľmi
+\end{enumerate}
+
+Napriek tejto, podľa mňa, veľmi dobrej definícii existuje viacero iných, kde mnohé z nich, nesprávne definujú gamifikáciu.
+Jednou z nich je napríklad veľmi často spomínaná definícia „ide o systém postavený na pravidlách, ktorý dáva používateľovi spätnú väzbu spolu s interaktívnymi mechanizmami s cieľom pomôcť používateľovi zlepšiť schopnosť vytvárania hodnoty“ \cite[s. 25]{huotari2011gamification}. Ďalej budem používať a pracovať s gamifikáciou zadefinovanou v článku [Najlepšia definícia gamifikácie strana 10] nakoľko sa podľa môjho názoru najlepšie zhoduje s jej využívaním vo výučbe jazykov.
+Ďalej sa v článku budem venovať gamifikácii spojenej s výučbou jazyka \ref{language_learning_gamification_mobile_learning}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\section{Ako funguje mobilné učenie a gamifikácia (DUOLINGO)} \label{duolingo} %
+\section{Mobilné učenie} \label{mobile_learning}
 
-FILLTEXT
-
-%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-\section {Štatistiky, grafy levelmi .... (Motivácie)} \label{statistics}
-
-FILLTEXT
+Označuje nový prístup k učeniu využívajúci mobilné technológie „teoreticky je možné mobilné učenie definovať ako akúkoľvek formu učenia za pomoci zariadenia na batérie, takého že dokáže sprevádzať človeka kedykoľvek a kamkoľvek" \cite{deMoraesSarmentoRego2015}.
+Mobilné učenie je považované skôr za doplnok k tradičnému štýlu učenia, než jeho úplným nahradením.
+Medzi hlavné výhody patrí možnosť pokračovať v učení aj mimo školy, učivo prispôsobené študentovi na mieru, rýchlejšia spätná väzba ale aj väčšia sloboda študentov pri práci s látkou, či možnosť spolupráce medzi študentami \cite{deMoraesSarmentoRego2015}.
+V tomto článku sa na mobilne učenie pozerám hlavne z pohľadu jeho využitia na výučbu jazykov. Takéto používanie sa často nazýva MALL (Mobile assisted language learning) a postupne sa takáto forma dostáva do popredia, keďže vďaka možnosti učiť sa kdekoľvek a kedykoľvek, dôkaze zvýšiť angažovanosť a dobre skúsenosti s učením \cite{kukulska2005mobile}.
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\section{Záver} \label{end}
+\section{Výučba jazykov za pomoci gamifikácie} \label{language_learning_gamification_mobile_learning}
 
-FILLTEXT
+Učenie jazyka je dlhodobý proces, na ktorý je potrebné mať dostatočné množstvo motivácie a času. Preto je výhodné zväčšiť si časové možnosti používaním mobilného učenia \ref{mobile_learning}. Zároveň je na zlepšenie motivácie možné použiť gamifikáciu, ktorá motiváciu preukázateľne zvyšuje \ref{gamification} [odkaz na časť 3].
+Preto je v dnešnej dobe gamifikácia dosť často používaná v kombinácii s mobilným učením, práve na výučby jazykov. Jedna z najviac skúmaných \cite{dehganzadeh2020investigating}, ale zďaleka nie jediných mobilných aplikácii je Duolingo.
+Mnoho výskumov poukazuje na funkčnosť tohto riešenia, kde táto gamifikovaná MALL(mobile assisted language learning) aplikácia prekonáva tradičnú formu výučby jazykov \cite{LEVY2007185}.
+Duolingu sa chcem venovať aj z toho dôvodu, že ide o jednu z najviac skúmaných gamifikovaných aplikácii na výučbu jazyka, a to aj preto, že má najviac používateľov \cite{doi:10.1080/09588221.2021.1933540}.
+Čo sa týka gamifikácie, tak Duolingo používa minimálne 22 jej prvkov \cite{doi:10.1080/09588221.2021.1933540}, kde niektoré z nich boli spomenuté v \ref{gamification}.
+Pri hodnotení efektivity a funkčnosti tohto riešenia väčšina článkov hodnotených systematicky píše o pozitívach \cite{dehganzadeh2020investigating} z nich najviac spomínané je zlepšenie motivácie žiakov, zapájania sa do aktivít a zlepšenie jazykových schopností.
+Z týchto zistení je možné usúdiť, že používanie MALL platforiem nielen posunie žiakovi vedomosti ale aj zlepší jeho chuť učiť sa, čo sa o normálnom spôsobe učenia povedať nedá.
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\section{Výučba jazykov za pomoci video hier} \label{language_learning_games}
+
+Video hry sú sami o sebe pôvodcom gamifikácie a jej prvkov, preto je dôležité overiť ich využiteľnosť vo výučbe.
+Na rozdiel od MALL aplikácii cieľom väčšiny hier nie je výučba jazyka, napriek tomu je v dnešnej dobe celkom bežné, že sa hráč naučí cudzí jazyk aj pomocou hrania video hier \cite{godwin2014games}. Oproti MALL aplikáciám nejde o priame učenie ale veľa hráčov si vedomosti jazyka zlepšuje a prehlbuje napríklad pri hľadaní návodov ako prejsť daný level, prípade ako funguje mechanika danej hry.
+Tak ako pri výučbe jazykov aj tu sa akademici snažia nájsť spôsoby ako využiť hry na učenie jazykov, alebo aj iných aktivít. Ich prístup sa dá rozdeliť do rôznych kategórii. Niektorí tvoria hry zamerané čisto na učenie, takzvané seriózne hry, ale nájdu sa aj taký, ktorý len upravia  a doplnia pôvodnú hru o prvky podporujúce učenie. Oba spôsoby sú časovo aj finančne dosť náročné \cite{godwin2014games}.
+Ako funkčný koncept sa ukazuje hra, ktorá motivuje hráča ku hľadaniu si informácii, prípadne spolupráci a socializáciou s komunitou aj po splnení základných úloh v hre.
+Zaujímavý bol aj koncept hry používaný v americkej armáde s názvom Tactical Iraqi. Táto hra bola používaná na výučbu iránčiny, spolu s miestnymi zvykmi a gestami. Aj keď na rok vydania táto hra používala veľmi moderné technológie motivácia naučiť sa nepochádzala z vnútorného presvedčenia, ale z nutnosti naučiť sa jazyk ak chcel daný vojak prežiť \cite{losh2005country}.
+Podľa zistení akademikov sa zatiaľ nepodarilo preukázať priamu súvislosť medzi hraním hier a naučením sa jazyka. Jediné čo bolo zistené je, že MMO hry majú väčší potenciál naučiť hráča nový jazyk, avšak nie pre ich vyučujúce vlastnosti, ale pre ich prepojenosť s komunitou.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\begin{figure}
+    \includegraphics[scale=0.5]{flow_chart_diagram}
+    \caption{Diagram spravneho použitia gamifikácie pri vývoji softvéru}
+    \label{flow_chart_diagram}
+\end{figure}
+
+\section{Záver} \label{conclusion}
+
+Tak ako je napísané v kapitole \ref{mobile_learning} naučenie jazyka je komplikovaný proces vyžadujúci značné úsilie a časovú investíciu žiaka do učenia.
+Na základe výsledkov mnohých štúdií je žiadúce na zlepšenie motivácie a študijných výsledkov použiť gamifikáciu ak by nám išlo o vytvorenie novej vyučovacej platformy, alebo používať niektorú z už skôr vytvorených platforiem poskytujúcich možnosti na učenie.
+V prípade používania hier už však nemôžme pristúpiť ku takémuto konštatovaniu, keďže zatiaľ nebola preukázaná priama súvislosť medzi ich hraním a možnosťou naučiť sa jazyk.
+Najväčšiu šancu na naučenie jazyka by mal hráč, ktorý je hrou nútený, alebo motivovaný hľadať si ku hre návody a informácie, alebo hráč hry podporujúcej vytváranie komunity hráčov \ref{language_learning_games}.
+Na základe mojích zistení preto ponúkam možný prístup k aplikovaniu gamifikácie pri vývoji rôzneho softvéru \ref{flow_chart_diagram}.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\section{Reakcia na témy preberané na prednáškach} \label{reaction_to_lectures}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\paragraph{Historické súvislosti.}
+
+Zaujímavý pohlaď od začiatkov informatiky cez navrhnutie a popis tranzistora až po výrobu procesorov skladajúcich sa z miliónov takýchto súčiastok.
+Ďalej sme sa dozvedeli o histórii takých velikánov ako je firma Intel ci o tom, že moorov zákon ma iba 4 strany, čo ma veľmi prekvapilo.
+
+\indent~Vďaka objavom prezentovaným na prednáške sme dokázali prekonať obrovský spoločensky posun, ku ktorého dopadom sa v oblasti učenia cudzích jazykov vyjadrujem v mojom článku.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\paragraph{Technológia a ľudia.}
+
+Na tejto prednáške sa spomínali rôzne prístupy ku tvorbe projektu. Najviac opísaný bol scrum, prístup ku vytváraniu projektu. Tento pristup je založený na postupnom pridávaní, iterovaní do kódu/projektu podľa spatnej väzby zákazníka. Takisto dáva bližšie termíny a rozoberá veľkú funkcionalitu do tzv. šprintov. Ďalšia funkcionalita sa pridáva do zoznamu kde na vrchole je najviac požadovaná funkcionalita.
+\par
+\indent~Pre mňa malo táto prednáška význam z toho dôvodu, že som si uvedomil, že aj keď na univerzite zatiaľ prevláda jednotlivá práca na projektoch tak v reálnom živote, budem súčasťou tímu so zabehnutými procesmi a postupmi, kde je veľmi dôležitá spolupráca.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\paragraph{Udržateľnosť a etika.}
+
+Prešli sme si definíciami udržateľnosti aj etiky, ďalej sme si zadefinovali udržateľný rozvoj, čo je v dnešnej dobe veľmi dôležité. V podstate ide o to aby sme maximalizovali využitie zdrojov tak aby nedochádzalo k ich postupnému vyčerpaniu, ale aby mohlo dochádzať k ich prirodzenej obnove.
+\par
+\indent~V mojom článku je udržateľnosť dôležitá hlavne z pohľadu udržania motivácie študenta pri učení cudzieho jazyka.
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\section {Materiály} \label{Materials}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{rok} & \textbf{počet hráčov} \\ \hline
+        2017         & 2,3904                \\ \hline
+        2018         & 2,4894                \\ \hline
+        2019         & 2,6251                \\ \hline
+        2020         & 3,0551                \\ \hline
+        2021         & 3,2104                \\ \hline
+        2022         & 3,0362                \\ \hline
+        2023         & 3,2654                \\ \hline
+        2024         & 3,457                 \\ \hline
+        2025         & 3,5793                \\ \hline
+        2026         & 3,6916                \\ \hline
+        2027         & 3,8033                \\ \hline
+    \end{tabular}
+    \caption{Tabuľka vývoja počtu hráčov hier {\cite{gamers}}}
+    \label{gamer_count}
+\end{table}
+
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+% \bibliographystyle{apa} % HARVARD style
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný IEEE styl
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \end{document}
